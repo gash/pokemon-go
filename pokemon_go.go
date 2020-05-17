@@ -393,6 +393,8 @@ mudkip main() {
 	s.Filename = "example"
 	s.Whitespace = 0 // Include all whitespace
 	m := make(map[string]string)
+
+	// Convert from Pokemon-Go to Go
 	m["pikachu"] = "var"
 	m["meowth"] = "break"
 	m["jigglypuff"] = "case"
@@ -419,7 +421,9 @@ mudkip main() {
 	m["lickitung"] = "struct"
 	m["braviary"] = "switch"
 	m["charizard"] = "type"
+
 	/*
+	// Convert from Go to Pokemon-Go
 	m["var"] = "pikachu"
 	m["break"] = "meowth"
 	m["case"] = "jigglypuff"
@@ -447,6 +451,7 @@ mudkip main() {
 	m["switch"] = "braviary"
 	m["type"] = "charizard"
 	*/
+	
 	//s.Mode =
 	var str strings.Builder
 	for tok := s.Scan(); tok != scanner.EOF; tok = s.Scan() {
