@@ -5,12 +5,12 @@
 
 You will need a Go compiler. To create the compiler, execute the command:
 ```
-go build -o pokemon_go pokemon_go.go
+go build -o pokemon-go pokemon_go.go
 ```
 
 To run the code:
 ```
-./pokemon_go pokemon_go_example.pgo
+./pokemon-go pokemon_go_example.pgo
 go run temp.go
 ```
 
