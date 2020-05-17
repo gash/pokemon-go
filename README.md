@@ -46,3 +46,6 @@ It can then be run as:
 
 The resulting code can then be run from pokemon-go.
 
+## Improvements
+
+We acknowledge that comments are not preserved during the conversion phase from Go to pokemon-go or vice versa.
