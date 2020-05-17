@@ -18,9 +18,14 @@ go run temp.go
 
 To ensure that we properly tokenize pokemon-go with correct substitution of keywords from Go, we copied over the contents of https://golang.org/src/go/token/token.go and changed the values of the tokens. We also had to create one new keyword, `importgo`.
 
+### Mapping of keyword names
+
+Please check out [this Google Sheet](https://docs.google.com/spreadsheets/d/14faEWc8WIfuvxUMHofM_e2u_xjuq0ke0zs2LCpffKLc/edit#gid=1415904394) for the mapping between all the different keywords in one convenient place.
+
 ### importgo
 
 We considered just creating a whole new compiler called `pokemon-go` by changing that token file in the source directory and then building the entire compiler. However, many other Go packages rely on the `go` keywords and changing those keywords would break how Go processed those files. It would mean we would have to go and update many, if not every, `.go` file in the repository. Thus, we introduced two ways to import files: one for regular `.go` files and our new `.pgo` files.
+
 
 ## Converting from pokemon-go to Go
 
